@@ -14,31 +14,6 @@
             color: white;
             margin: 0;
             padding: 0;
-            overflow: hidden; /* Impede que a bola ultrapasse os limites da tela */
-        }
-
-        /* Bola de basquete girando no fundo */
-        .bola {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 150px;
-            height: 150px;
-            background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Basketball_Logo.svg/1200px-Basketball_Logo.svg.png') no-repeat center center;
-            background-size: cover;
-            border-radius: 50%;
-            animation: girar 10s linear infinite;
-            transform-origin: center;
-            z-index: -1; /* Coloca a bola atrás do conteúdo */
-        }
-
-        @keyframes girar {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
         }
 
         /* Estilo para o título */
@@ -92,10 +67,8 @@
     <div>
         <h1 id="titulo">
             Lista de Esportes
-            <!-- Imagem da bola de basquete -->
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Basketball_Icon.svg/1200px-Basketball_Icon.svg.png" alt="Bola de Basquete">
         </h1>
-
+            
         <ul class="esportes">
             <li>Futebol</li>
             <li>Basquete</li>
@@ -103,12 +76,9 @@
             <li>Natação</li>
         </ul>
     </div>
-
-    <!-- Bola de basquete animada -->
-    <div class="bola"></div>
+    
 </body>
 </html>
-
 
 
 
